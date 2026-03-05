@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - D2R 아이템 식별기</title>
+  <link rel="icon" href="images/icon16.png" type="image/png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d0d1a;
+      color: #ddd;
+      padding: 30px 20px;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 { color: #ffd700; font-size: 1.6em; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85em; margin-bottom: 30px; }
+    h2 { color: #ffd700; font-size: 1.1em; margin: 28px 0 10px; border-left: 3px solid #ffd700; padding-left: 10px; }
+    p { color: #ccc; margin-bottom: 10px; }
+    ul { padding-left: 20px; color: #ccc; margin-bottom: 10px; }
+    li { margin-bottom: 5px; }
+    .highlight {
+      background: rgba(255, 215, 0, 0.08);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin: 16px 0;
+    }
+    .highlight p { margin: 0; color: #ffd700; font-weight: 600; }
+    a { color: #6ab0f5; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; color: #666; font-size: 0.82em; }
+  </style>
+</head>
+<body>
+
+  <h1>개인정보처리방침</h1>
+  <p class="updated">최종 수정일: 2026년 3월</p>
+
+  <div class="highlight">
+    <p>📢 이 확장 프로그램은 사용자의 개인정보를 수집하거나 외부 서버로 전송하지 않습니다.</p>
+  </div>
+
+  <h2>1. 개요</h2>
+  <p>
+    "D2R 아이템 식별기"(이하 "확장 프로그램")는 디아블로2 레저렉션 아이템 스크린샷을 분석하여
+    Traderie의 시세를 조회하는 Chrome 확장 프로그램입니다.
+    본 방침은 확장 프로그램이 처리하는 데이터의 범위와 방식을 설명합니다.
+  </p>
+
+  <h2>2. 수집하는 데이터</h2>
+  <p>이 확장 프로그램은 다음 데이터를 처리합니다:</p>
+  <ul>
+    <li><strong>스크린샷 이미지</strong> — 사용자가 직접 업로드하거나 붙여넣은 이미지. OCR 처리는 사용자 PC에서 완전히 로컬로 수행되며, 이미지는 어떠한 외부 서버에도 전송되지 않습니다.</li>
+    <li><strong>즐겨찾기 데이터</strong> — 아이템 정보 및 가격 데이터. Chrome의 로컬 스토리지(<code>chrome.storage.local</code>)에만 저장되며, 사용자 기기 밖으로 전송되지 않습니다.</li>
+    <li><strong>설정값</strong> — 게임 모드(래더/스탠, 소프트/하드) 등 사용자 설정. 마찬가지로 로컬에만 저장됩니다.</li>
+  </ul>
+
+  <h2>3. 외부 API 연동</h2>
+  <p>아이템 시세 조회를 위해 아래 두 사이트의 공개 API를 사용합니다:</p>
+  <ul>
+    <li>
+      <strong>Traderie (<a href="https://traderie.com" target="_blank">traderie.com</a>)</strong><br>
+      아이템 판매 중인 가격 데이터 조회에 사용됩니다. 해당 사이트 운영자로부터 사전 허가를 받았습니다.<br>
+      아이템 거래완료 이력은 해당 사이트의 운영정책을 위반하기 때문에 제공하지 않습니다.<br>
+      트레더리의 거래방법 및 회원가입은 트레더리 이용수칙을 따르십시오.
+    </li>
+    <li>
+      <strong>D2Emu (<a href="https://d2emu.com" target="_blank">d2emu.com</a>)</strong><br>
+      아이템 기초 데이터(옵션, 분류 등) 조회에 사용됩니다. 해당 사이트 운영자로부터 API 사용에 대한 사전 허가를 받았습니다.
+    </li>
+  </ul>
+  <p>
+    이 API 호출 시 아이템 검색 파라미터(아이템 종류, 게임 모드 등 비식별 정보)만 전송됩니다.
+    사용자의 개인 식별 정보, 계정 정보, 위치 정보 등은 전혀 포함되지 않습니다.
+  </p>
+
+  <h2>4. 개인정보 미수집 선언</h2>
+  <ul>
+    <li>이름, 이메일, 전화번호 등 개인 식별 정보를 수집하지 않습니다.</li>
+    <li>사용자의 브라우징 기록, 방문 사이트, 검색 기록을 수집하지 않습니다.</li>
+    <li>수집한 어떠한 데이터도 제3자에게 판매하거나 공유하지 않습니다.</li>
+    <li>광고 목적으로 데이터를 재사용 하지 않습니다.</li>
+    <li>별도의 계정 가입이나 로그인을 요구하지 않습니다.</li>
+  </ul>
+
+  <h2>5. 사용 권한 목적</h2>
+  <ul>
+    <li><strong>storage</strong> — 즐겨찾기 및 설정을 사용자 기기에 로컬 저장하기 위해 사용합니다.</li>
+    <li><strong>sidePanel</strong> — Chrome 사이드 패널에 확장 프로그램 UI를 표시하기 위해 사용합니다.</li>
+    <li><strong>declarativeNetRequest</strong> — Traderie API 요청 시 필요한 HTTP 헤더(Referer)를 설정하기 위해 사용합니다. 사용자 트래픽을 가로채거나 수정하지 않습니다.</li>
+    <li><strong>host_permissions (traderie.com, d2emu.com)</strong> — 위 두 사이트의 공개 API에서 아이템 데이터를 가져오기 위해 사용합니다.</li>
+  </ul>
+
+  <h2>6. OCR 처리 방식</h2>
+  <p>
+    아이템 이미지 텍스트 인식(OCR)은 Tesseract.js 라이브러리를 사용하여
+    <strong>사용자의 PC에서 완전히 로컬로</strong> 처리됩니다.
+    업로드된 이미지는 OCR 처리 후 즉시 메모리에서 제거되며, 어떠한 서버에도 전송되지 않습니다.
+  </p>
+
+  <h2>7. 데이터 보관 및 삭제</h2>
+  <p>
+    즐겨찾기 등 로컬 저장 데이터는 사용자가 Chrome 확장 프로그램을 제거하거나,
+    확장 프로그램 내 내보내기/삭제 기능을 통해 직접 관리할 수 있습니다.
+  </p>
+
+  <h2>8. 방침 변경</h2>
+  <p>
+    개인정보처리방침이 변경될 경우, 확장 프로그램 업데이트 노트를 통해 사용자에게 안내합니다.
+    변경된 방침은 Chrome 웹 스토어 등록 페이지 및 이 문서를 통해 확인할 수 있습니다.
+  </p>
+
+  <h2>9. 문의</h2>
+  <p>
+    개인정보 처리에 관한 문의 사항은 Chrome 웹 스토어의 지원 탭을 통해 연락하시기 바랍니다.
+  </p>
+  <h2>10. 개발자응원하기</h2>
+  <p>
+    꾸준한 업그레이드를 위해 개발자의 채널을 방문해 응원해주세요. 
+    https://www.youtube.com/@diuno88
+  </p>
+  <footer>
+    D2R 아이템 식별기 &mdash; 모든 게임 콘텐츠의 저작권은 Blizzard Entertainment에 있습니다.
+    아이템 거래 데이터는 traderie.com 및 d2emu.com의 허가 하에 사용됩니다.
+  </footer>
+
+</body>
+</html>
